@@ -1,0 +1,52 @@
+20
+Oradea
+Satu-Mare
+Timisoara
+Cluj-Napoca
+Bucuresti
+Piatra-Neamt
+Constanta
+Craiova
+Bistrita
+Arad
+Alba-Iulia
+Iasi
+Tulcea
+Braila
+Pitesti
+Brasov
+Timisoara
+Targu-Mures
+Sibiu
+Suceava
+Satu-Mare Oradea
+Baia-Mare Satu-Mare
+Baia-Mare Cluj-Napoca
+Oradea Cluj-Napoca
+Arad Oradea
+Arad Cluj-Napoca
+Arad Timisoara
+Timisoara Alba-Iulia
+Alba-Iulia Cluj-Napoca
+Cluj-Napoca Bistrita
+Cluj-Napoca Targu-Mures
+Alba-Iulia Sibiu
+Timisoara Craiova
+Alba-Iulia Craiova
+Sibiu Brasov
+Targu-Mures Brasov
+Bistrita Targu-Mures
+Bistrita Suceava
+Suceava Iasi
+Iasi Piatra-Neamt
+Piatra-Neamt Brasov
+Brasov Pitesti
+Pitesti Craiova
+Brasov Bucuresti
+Pitesti Bucuresti
+Bucuresti Piatra-Neamt
+Piatra-Neamt Braila
+Braila Bucuresti
+Bucuresti Constanta
+Constanta Tulcea
+Tulcea Braila
