@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using Aco_Domain;
 using Aco_Domain.AntColony;
 using Aco_Domain.Graph;
 
@@ -12,7 +11,6 @@ namespace Aco_Tsp
         {
             try
             {
-                // AntColonyProgram.Main1(args);
                 const string filename = "..\\..\\..\\Data\\Cities.txt";
                 var graph = GraphReader.ReadGraphAsAdjMatrix(filename);
                 var ants = new List<Ant>(AcoUtils.NumAnts);

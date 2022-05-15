@@ -10,4 +10,8 @@
       <ProjectReference Include="..\Aco-Domain\Aco-Domain.csproj" />
     </ItemGroup>
 
+    <ItemGroup>
+      <Compile Remove="Program1.cs" />
+    </ItemGroup>
+
 </Project>
