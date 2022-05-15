@@ -1,24 +1,24 @@
 20
-Oradea
-Satu-Mare
-Timisoara
-Cluj-Napoca
-Bucuresti
-Piatra-Neamt
-Constanta
-Craiova
-Bistrita
-Arad
-Alba-Iulia
-Iasi
-Tulcea
-Braila
-Pitesti
-Brasov
-Baia-Mare
-Targu-Mures
-Sibiu
-Suceava
+0 Oradea OR
+1 Satu-Mare SM
+2 Timisoara TM
+3 Cluj-Napoca CN
+4 Bucuresti BU
+5 Piatra-Neamt PN
+6 Constanta CT
+7 Craiova CR
+8 Bistrita BT
+9 Arad AR
+10 Alba-Iulia AI
+11 Iasi IS
+12 Tulcea TL
+13 Braila BR
+14 Pitesti PT
+15 Brasov BS
+16 Baia-Mare BM
+17 Targu-Mures TGM
+18 Sibiu SB
+19 Suceava SU
 Satu-Mare Oradea
 Baia-Mare Satu-Mare
 Baia-Mare Cluj-Napoca
