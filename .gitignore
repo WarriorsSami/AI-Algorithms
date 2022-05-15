@@ -1,3 +1,4 @@
 # Project exclude paths
 **\bin
 **\obj
+**\Program1.cs
