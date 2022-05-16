@@ -1,4 +1,6 @@
 20
+Oradea
+Tulcea
 0 Oradea OR
 1 Satu-Mare SM
 2 Timisoara TM

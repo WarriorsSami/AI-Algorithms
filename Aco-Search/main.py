@@ -1,16 +1,21 @@
-from graph import draw_graph, G, city_name_dict, set_edge_color, EdgeColor
+from ant_colony import AntColony, convert_path_to_edges
+from graph import create_graph, draw_path, EdgeColor
+from settings import ALPHA, BETA, RHO, Q, MAX_TIME, NO_ANTS
 
-draw_graph(G)
+try:
+    G, city_name_dict, (start_city, end_city) = create_graph('data\\cities.txt')
 
-trail = [(city_name_dict['Arad']['code'], city_name_dict['Oradea']['code']),
-         (city_name_dict['Oradea']['code'], city_name_dict['Satu-Mare']['code']),
-         (city_name_dict['Arad']['code'], city_name_dict['Timisoara']['code']),
-         (city_name_dict['Timisoara']['code'], city_name_dict['Alba-Iulia']['code']),
-         (city_name_dict['Alba-Iulia']['code'], city_name_dict['Sibiu']['code']),
-         (city_name_dict['Sibiu']['code'], city_name_dict['Brasov']['code']),
-         (city_name_dict['Brasov']['code'], city_name_dict['Bucuresti']['code']),
-         (city_name_dict['Bucuresti']['code'], city_name_dict['Braila']['code']),
-         (city_name_dict['Braila']['code'], city_name_dict['Tulcea']['code'])]
-set_edge_color(G, trail, EdgeColor.IN_PATH.value)
+    colony = AntColony(G, city_name_dict[start_city]['code'], city_name_dict[end_city]['code'],
+                       NO_ANTS, ALPHA, BETA, RHO, Q, MAX_TIME)
 
-draw_graph(G)
+    path = colony.run()
+    # convert path codes to path names
+    city_name_from_code = {v['code']: k for k, v in city_name_dict.items()}
+    path_name = [city_name_from_code[i] for i in path]
+    print(f"Best path: {path_name} with length: {len(path)}")
+
+    # draw path using edges
+    path_from_edges = convert_path_to_edges(path)
+    draw_path(G, path_from_edges, EdgeColor.IN_PATH.value)
+except Exception as e:
+    print(e)
